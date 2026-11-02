@@ -44,8 +44,10 @@ public class TicTacToe {
 		}
 	}
 
-	
-    /** Plays one full game. Returns 'X' or 'O' for a win, EMPTY for a draw, QUIT if input ended. */
+	/**
+	 * Plays one full game. Returns 'X' or 'O' for a win, EMPTY for a draw, QUIT if
+	 * input ended.
+	 */
 
 	private static char playGame(Scanner sc) {
 		char[][] board = new char[size][size];
@@ -138,9 +140,9 @@ public class TicTacToe {
 	}
 
 	/**
-     * Reads a move as "row col" (or "row,col", or two separate lines).
-     * Returns null when the input stream ends, so the game can exit cleanly.
-     */
+	 * Reads a move as "row col" (or "row,col", or two separate lines). Returns null
+	 * when the input stream ends, so the game can exit cleanly.
+	 */
 	private static int[] readMove(Scanner sc) {
 		System.out.print("Enter row and column - (eg. 1 2): ");
 		while (sc.hasNextLine()) {
